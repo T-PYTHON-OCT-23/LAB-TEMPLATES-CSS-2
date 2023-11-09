@@ -2,8 +2,8 @@
 
 ## Create a website for a real estate agency , the website should have a home page that looks like the image below , you should :
 - use templates & templates inheritance
-- use google fonts (choose the same font `Phudu` , or a similar one) `https://fonts.google.com/`
-- use google fonts icons (choose similar icons) `https://fonts.google.com/icons`
+- use google fonts (choose the same font `Phudu` , or a similar one) [https://fonts.google.com](https://fonts.google.com)
+- use google fonts icons (choose similar icons) [https://fonts.google.com/icons](https://fonts.google.com/icons)
 - use images and icons of your chosing (not necessarily like the below image).
 - use static for your static files (css, images, videos, etc.)
 - use icons of your choosing (not necessarily like the below image)
