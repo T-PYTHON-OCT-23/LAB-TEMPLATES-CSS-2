@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Phudu:wght@300&display=swap" rel="stylesheet">
+    <title>{% block title %} Page Not Found {% endblock %} </title>
+    <link rel="stylesheet" href="{% static 'main/base.html' %}">
+</head>
+<body>
+    <header>
+
+    </header>
+    {% block body %}
+     <h1> Wait you have violated the law </h1>
+    {% endblock %}
+
+    <footer>
+
+    </footer>
+</body>
+</html>
