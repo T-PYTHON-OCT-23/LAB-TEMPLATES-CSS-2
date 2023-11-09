@@ -9,4 +9,4 @@
 - use icons of your choosing (not necessarily like the below image)
 
 
-<img width="795" alt="240537838-8e6b6250-7878-4595-ba04-66c2c8240122" src="https://github.com/T-PYTHON-JULY-23/LAB_DJANGO_CSS_HTML/assets/91186666/b23af1f6-47bb-4a81-8e6e-1b2fd4c802a9">
+<img width="795" alt="240537838-8e6b6250-7878-4595-ba04-66c2c8240122" src="https://github.com/T-PYTHON-OCT-23/LAB-TEMPLATES-CSS-2/blob/main/261297529-b23af1f6-47bb-4a81-8e6e-1b2fd4c802a9.png?raw=true">
