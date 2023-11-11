@@ -9,17 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Phudu:wght@300&display=swap" rel="stylesheet">
     <title>{% block title %} Page Not Found {% endblock %} </title>
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
-    <!--     <header>
 
-    </header>
-    {% block body %}
-     <h1> Wait you have violated the law </h1>
-    {% endblock %}
-
-    <footer>
-
-    </footer>
-    -->
 </head>
 <body>
     <div class="root">
@@ -28,7 +18,7 @@
             <img class="image-background" src="{% static 'image/sas.webp' %}" alt="root image">
             <div class="navigation-bar">
                 <div class="logo">
-                    <h1> HOME</h1>
+                    <h1> {% block images %}HOME</h1>
                 </div>
 
                 <div class="link-box">
