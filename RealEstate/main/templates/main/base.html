@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Phudu:wght@300&display=swap" rel="stylesheet">
     <title>{% block title %} Page Not Found {% endblock %} </title>
-    <link rel="stylesheet" href="{% static 'main/base.html' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
     <!--     <header>
 
     </header>
@@ -23,13 +23,14 @@
 </head>
 <body>
     <div class="root">
-        <img src="{% static 'image/root-image.jpg' %}" alt="root image">
+        <!-- navbar start-->
         <div class="upper">
+            <img class="image-background" src="{% static 'image/sas.webp' %}" alt="root image">
             <div class="navigation-bar">
                 <div class="logo">
-                    <img src="{% static 'image/homelogo.png' %}" alt="home logo">
-
+                    <h1> HOME</h1>
                 </div>
+
                 <div class="link-box">
                     <a href=""> Home</a>
                     <a href=""> Properties</a>
@@ -37,6 +38,7 @@
                     <a href=""> About</a>
                     <a href=""> Contract</a>
                 </div>
+                
                 <div class="sign-box">
                     <div class="sign-logo">
                         <img src="{% static 'image/person.png' %}" alt="person logo">
@@ -48,55 +50,57 @@
                 </div>
             </div>
         </div>
-        
-        <div class="content-box">
-            <div class="content-body">
-
-            </div>
-            <div class="content-title">
-
-            </div>
-            <div class="content-button">
-                <a href="">Catalog</a>
-            </div>
-        </div>
-
-        <div class="catalog-box">
-            <div class="all">
-                <img src="{% static 'image/all.png' %}" alt="all logo">
-                <a href="">all</a>
-            </div>
-            <div class="all">
-                <img src="{% static 'image/land-lots.png' %}" alt="land lots logo">
-                <a href="">land lots</a>
-            </div>
-            <div class="all">
-                <img src="{% static 'image/office.png' %}" alt="office logo">
-                <a href="">office</a>
-            </div>
-            <div class="all">
-                <img src="{% static 'image/store.png' %}" alt="store logo">
-                <a href="">store</a>
-            </div>
-            <div class="all">
-                <img src="{% static 'image/apartment.png' %}" alt="apartment logo">
-                <a href="">apartment</a>
-            </div>
-            <div class="all">
-                <img src="{% static 'image/villa.png' %}" alt="villa logo">
-                <a href="">villa</a>
-            </div>
-            <div class="all">
-                <img src="{% static 'image/house.png' %}" alt="house logo">
-                <a href="">house</a>
-            </div>
-        </div>
-
-        <div class="lower">
-
-        </div>
+        <!-- navbar end-->
+            <!-- content side strat-->
+                <div class="content-box">
+                    <div class="content-body">
+                        <div>
+                            <h1> FIND YOUR</h1>
+                        </div>
+                        <div>
+                            <h1> FUTURE HOUSE</h1>
+                        </div>
+                    </div>
+                    <div class="content-title">
+                        <p> A personal essay on the dream house I will someday live in. My ideal future home would be a spacious, well- designed house with plenty of outdoor space. The layout of the house should be designed to allow for plenty of privacy and flexibility. I would also like a home that is energy-efficient and environmentally friendly. In terms of furniture, I would prefer something that is both comfortable and stylish.</p>
+                    </div>
+                    <div class="content-button">
+                        <a href="">Catalog</a>
+                    </div>
+                </div>
+            <!--  content end -->
+            <!-- footer strat-->
+                <div class="catalog-box">
+                    <div class="all">
+                        <img id="img1" src="{% static 'image/all.png' %}" alt="all logo">
+                        <a href="">all</a>
+                    </div>
+                    <div class="all">
+                        <img id="img2" src="{% static 'image/land-lots.png' %}" alt="land lots logo">
+                        <a href="">lands</a>
+                    </div>
+                    <div class="all">
+                        <img id="img3" src="{% static 'image/office.png' %}" alt="office logo">
+                        <a href="">office</a>
+                    </div>
+                    <div class="all">
+                        <img id="img4" src="{% static 'image/store.png' %}" alt="store logo">
+                        <a href="">store</a>
+                    </div>
+                    <div class="all">
+                        <img id="img5" src="{% static 'image/apartment.png' %}" alt="apartment logo">
+                        <a href="">apartment</a>
+                    </div>
+                    <div class="all">
+                        <img id="img6" src="{% static 'image/villa.png' %}" alt="villa logo">
+                        <a href="">villa</a>
+                    </div>
+                    <div class="all">
+                        <img id="img7" src="{% static 'image/house.png' %}" alt="house logo">
+                        <a href="">house</a>
+                    </div>
+                </div>
+            <!-- footer end-->
     </div>
-
-
 </body>
 </html>
