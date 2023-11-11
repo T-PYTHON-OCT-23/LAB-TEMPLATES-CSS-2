@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+        
+body{
+    background-color: rgba(186, 119, 67, 0.679);
+}
+.b{
+    margin-left: 100;
+    width: 80%;
+    padding: 10px;
+    padding-right: 10px;
+    font-family: 'Ubuntu', sans-serif;
+
+
+
+}
+
+h1{
+    font-size: 100px;
+    margin-left: 100px;
+    margin-top: 150px;
+    color: #ae612a;
+
+}
+p{
+    color: #a9571c;
+   
+
+}
+.t{
+    background-color: #ecc8a5ba;
+    opacity: 0.8;
+   padding: 10px;
+    border-width: 10px;
+    margin-left: 40px;
+   margin-right: 500px;
+   margin-left: 100px;
+
+}
+h3{
+    background-color: #9c4f19;
+    text-align: center;
+    margin-left: 230px;
+    margin-right: 230px;
+    border-radius: 130px;
+}
+
+nav{
+
+    
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap:15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+.nav-links {
+    background-color: #ecc8a5ba;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    font-size: 20px;
+    padding: 25px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 130px;
+    opacity: 0.8;
+  
+
+    font-family: 'ubuntu', sans-serif;
+}
+
+
+.icon {
+    width: 60px;
+    margin-left: 40px;
+    }
+.icon2{
+    width: 60px;
+    margin-right: 40px;
+}
+
+nav a {
+    text-decoration: none;
+}
+.fs{
+    padding-top: 10px;
+    margin-top:140px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+  }
+  .f2{
+    background-color: #ecc8a5ba;
+    display: flex;
+    border-radius: 130px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 25px;
+    padding-left: 600px;
+    padding-right: 600px;
+    padding: center;
+    border-radius: 200px;
+    
+
+  }
+  
+  .icons{
+    width: 50px;
+    height: 40px;
+   
+    
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    margin-left: 250px;
+    padding:0;
+    color: rgb(177, 103, 39);
+    }
+  
+    li {
+    display: inline-block;
+    margin: 0 5px;
+    }
+
+footer {
+    color: #9c4f19;
+    padding: center;
+    padding-top: 10px;
+    margin-top:40px;
+    text-align: center;
+    font-family: 'ubuntu', sans-serif;
+    margin-bottom: 0px;
+ 
+
+}
+
+

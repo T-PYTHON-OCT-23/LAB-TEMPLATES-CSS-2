@@ -1,0 +1,46 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %} Home {% endblock %}
+
+{% block content %}
+<style>
+    body{
+    background-image:url("/static/images/home.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.games-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap:20px;
+    flex-wrap: wrap;
+}
+</style>
+
+    <div class="b">
+        <h1> FIND YOUR<br> DREAM</h1>
+        <div class="t">
+        <p><b>Do you want to have an exciting experience like <br>living in huts in the middle of the snow?<br> A wonderful atmosphere and stunning views in a place<br> characterized by beauty and tranquility to provide you comfort and enjoyment.</b></p>
+        <h3>catalog</h3>
+        </div>
+
+        <div class="games-container">
+            {% for i in icon %}
+
+                <div class="game-card">
+                    <img src="{{h.image}}" />
+                    <div class="game-content">
+                        <h4>{{ image.text }}</h4>
+                    </div>
+                    
+                </div>
+                
+
+            {% endfor %}
+        </div>
+
+
+{% endblock %}
+ 

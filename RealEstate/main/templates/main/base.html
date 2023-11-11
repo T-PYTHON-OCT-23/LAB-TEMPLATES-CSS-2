@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="/static/css/main.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <title>{% block title %}  {% endblock %}</title>
+</head>
+<body>
+</div>
+<nav>
+    <img class="icon" src="/static/images/icon.png"/>
+    
+
+    <div class="nav-links">
+       <a href="/">Home</a>
+       <a href="{% url 'main:properties'%}"> Propertis</a>
+       <a href="{% url 'main:service'%}"> service</a>
+       <a href="{% url 'main:about'%}"> about</a>
+    </div>
+
+
+
+    <img class="icon2" src="/static/images/p.png"/>
+ </nav>
+</div>
+{% block content %}
+
+{% endblock %}
+        <footer class="fs">
+            <ul class="f2">
+                <li> <img class="icons" src="/static/images/place.png" /><br>location</li>
+                <li> <img class="icons" src="static/images/villa.png" /><br>Villa</li>
+                <li> <img class="icons" src="static/images/apartment.png" /><br>Apartment</li>
+                <li> <img class="icons" src="static/images/cabin.png" /><br>Huts</li>
+
+            </ul>   
+        </footer>
+
+
+<footer>
+ <h5> 2024 All rights reserved</h5>
+</footer>
+
+
+    
+</body>
+
+</html>
