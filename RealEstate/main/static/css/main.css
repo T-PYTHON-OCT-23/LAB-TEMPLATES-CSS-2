@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@600&display=swap');
+body {
+    background-image: url('/static/image/pic1.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+nav{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:350px;
+}
+
+.Rec1{
+    width: 611px;
+    height: 90px;
+    border-radius: 40px;
+    background: #CEE5F1;
+    margin-right: 30px;
+    }
+
+.Rec2{
+    width: 1000px;
+    height: 140px;
+        border-radius: 60px;
+        background: #CEE5F1;
+        margin-left: 350px;
+        margin-top: 90px;
+    }
+
+.nav2{
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap:350px;
+     }
+
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
+        font-family: 'ubuntu', sans-serif;
+        margin-top: 35px;
+        margin-left: 50px;
+        font-family: Phudu;
+    }
+    .nav-links2 {
+        display: flex;
+        flex-direction: row;
+        gap: 110px;
+        font-family: 'ubuntu', sans-serif;
+        margin-top: 40px;
+        margin-left: 40px;
+        font-family: 'Phudu';
+    }
+    .nav-links3 {
+        display: flex;
+        flex-direction: row;
+        gap: 99px;
+        font-family: 'ubuntu', sans-serif;
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+    .material-icons{
+        font-size: 38px;
+        border-radius: 30px;
+    }
+    .icon-signup{
+        
+        color: #000;
+        font-family: Phudu;
+        font-size: 20px;
+    }
+    .Home{
+        display: flex;
+        color: #4EB4E0;
+        font-family: 'Phudu', sans-serif;   
+        font-size: 60px;
+        margin: 30px;
+    }
+
+    h1{
+        color: #000;
+        text-align: left;
+        font-family: 'Phudu';
+        font-size: 120px;
+        margin-bottom: 1px;
+        margin-left:1100px ;
+
+    }
+
+    p.c {
+        color: #000;
+        text-align: left;
+        font-family:'phuda';
+        font-size: 20px;
+        width: 320px;
+        height: 50px;
+        padding: 10px;
+        margin-left:1100px ;
+        margin-top: -20px;
+    }
+
+    button{ 
+        border: none;
+        color: white;
+        width: 250px;
+        padding: 15px 32px ;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        flex-shrink: 0;
+        margin-left: 1300px;
+        margin-top: 50px;
+        border-radius: 30px;
+        background-color: #000000;
+    }
+
+   
