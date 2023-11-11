@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Oswald&family=Phudu:wght@500&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <title>{% block title%} {% endblock %}</title>
+    <link href="/static/css/real_estate_app.css" rel="stylesheet" />
+
+</head>
+<body>
+            <header class="header">
+                <h1 class="logo-name"> Home <span><img class="logo" src="{% static 'images/key1.png' %}"/> </span></h1>
+                <ul class="top-bar">
+                    <li>Home</li>
+                    <li>Properties</li>
+                    <li>Service</li>
+                    <li>About</li>
+                    <li>Contacts</li>
+                </ul>
+
+                <p class="sign-up"> <span> <img class="img-user" src="{% static 'images/add-user.png' %}" /> </span>Sign up</p>
+            </header>
+
+              {% block content %}
+              {% endblock %}
+
+              <footer class="footer">
+                <ul class="toolbar">
+                    <li> <img class="icons" src="{% static 'images/green-home.png' %}" /> All</li>
+                    <li> <img class="icons" src="{% static 'images/landd.png' %}" />Land lots</li>
+                    <li> <img class="icons" src="{% static 'images/folder.png' %}" />Office</li>
+                    <li> <img class="icons" src="{% static 'images/shopping-cart.png' %}" />Store</li>
+                    <li> <img class="icons" src="{% static 'images/apartment.png' %}" />Apartment</li>
+                    <li> <img class="icons" src="{% static 'images/villa.png' %}" />Villa</li>
+                    <li> <img class="icons" src="{% static 'images/housee.png' %}" />House</li>
+                </ul>   
+              </footer>
+
+                     
+                
+</body> 
+</html>
