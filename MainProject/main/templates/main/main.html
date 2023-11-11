@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/css/style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <title>{% block title %} main {% endblock %}</title>
+
+</head>
+
+
+<body>
+
+    <div class="nav-bar">   
+        <nav> 
+            
+            <img class="logo" src="/static/img/hous-logo.jpg" />
+
+                <div class="nav-links">
+                    <a href="/">Home</a>
+                    <a href="{% url 'main:services_view' %}">Services</a>
+                    <a  href="{% url 'main:about_view' %}">About</a>
+                    <a  href="{% url 'main:properites_view' %}" >Proprites</a>
+                    <a href="{% url 'main:contact_view' %}">Contact us</a>  
+                </div>
+
+            <a><b>Sign up</b></a>
+        </nav>
+
+    </div>
+    
+    {% block content %}
+
+    {% endblock %}
+
+<!--To add a footer-->
+    <div class="fotter">
+    </div>
+
+
+</body>
+</html>

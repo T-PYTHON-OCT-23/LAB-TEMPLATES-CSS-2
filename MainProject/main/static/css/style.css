@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body { 
+    background-image: url("/static/img/apartment.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-family: 'Monospace' ,'ubuntu' , Arial;   
+}
+
+nav {
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: darkblue;
+    font-size: large;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.logo {
+    width: 55px;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    font-family: 'ubuntu', 'sans-serif' ;
+    background-color: white;
+    border: 15px solid white;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.title {
+    width: 500px;
+    border: 130px;
+    padding: 50px;
+    margin: 100px;
+}
+
+.title h1 {
+    font-size: 65px;
+  
+}
+.title h3 {
+    font-size: 25px;
+   
+}
+.nav-bar {
+   margin-left: 10px; 
+   margin-right: 10px;
+}
+
+button{
+
+    color:white;
+    background-color: black;
+    border: 20px solid black;
+    border-radius: 30px;
+    width: 200px;
+
+}
+
+.types{
+    font-weight: 50px;
+    gap: 5px;
+    font-family: 'ubuntu', 'sans-serif' ;
+    background-color: white;
+    border: 10px solid white;
+    border-radius: 30px;
+    align-items: center;
+    width: 50% ;
+
+}
+
+.nav-types{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.footer {  
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+}
+
+
+
