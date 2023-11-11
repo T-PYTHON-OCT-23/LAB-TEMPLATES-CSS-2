@@ -1,0 +1,64 @@
+
+{% extends 'main1/base.html' %}
+{% load static %}
+{% block title %} RealEstate {% endblock %}
+
+
+{% block content %}
+    
+<div>
+
+<h1>find your dream</h1>
+<h6>our catalog will suporise rather,discover </h6>
+<h6>\an unprecedentd offers of luxuryproperties</h6>
+    <img class="body-image" src="{% static 'image/b.jpg' %}" alt="a building image" />
+
+
+
+</div>
+<img src="{% static 'image/homeicon.png' %} "alt="Home" class="home-icon">
+    
+  
+    <img src="{% static 'image/sing.png' %} " alt="Sign Up" class="signup-icon">
+
+    
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Properties</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h1>find your dream</h1>
+       <p> our catalog will suporise rather,discover
+        an unprecedentd offers of luxuryproperties
+
+       </p> 
+      
+       
+    </div>
+
+    <!-- قسم الأيقونات في الأسفل -->
+    <div class="icons-section">
+        <img src="{% static 'image/house.png' %}"  alt="House"><span>House</span>
+        <img src="{% static 'image/villa.png' %} " alt="Villa"><span>Villa</span>
+        <img src="{% static 'image/apartment.png' %} " alt="Apartment"><span>Apartment</span>
+        <img src="{% static 'image/store.png' %} " alt="Store"><span>Store</span>
+        <img src="{% static 'image/office.png' %} " alt="Office"><span>Office</span>
+        <img src="{% static 'image/land.jpg' %} "alt="Land"><span>Land</span>
+        <img src="{% static 'image/lost.png' %} " alt="Lost"><span>Lost</span>
+        <img src="{% static 'image/all.png' %} " alt="All"><span>All</span>
+    </div>
+
+    
+    <div class="center-text">
+        <h2>Find Your Dream</h2>
+        <p style="font-size: 14px;">Our catalog will surprise you. Rather, discover an unprecedented offers of luxury properties.</p>
+        <button>catalog</button>
+    </div>
+
+    {% endblock  %}
