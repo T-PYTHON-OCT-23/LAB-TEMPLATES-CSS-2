@@ -1,9 +1,17 @@
 {% extends 'main/base.html' %}
 {% load static %}
-{% block logo %} HOME {% endblock%}
+{% block logo %}
+<h1>HOME</h1>
+{% endblock%}
 {% block images %}
-<img class="image-background" src="{% static 'image/pages/properties.jpg' %}" alt="Home Image">
+<img class="image-background" src="{% static 'image/pages/home.webp' %}" alt="Home Image">
 {% endblock %}
-{% block title %} FIND YOUR {% endblock %}
-{% block body %} FUTURE HOUSE {% endblock %}
-{% block paragraph %} A personal essay on the dream house I will someday live in. My ideal future home would be a spacious, well- designed house with plenty of outdoor space. The layout of the house should be designed to allow for plenty of privacy and flexibility. I would also like a home that is energy-efficient and environmentally friendly. In terms of furniture, I would prefer something that is both comfortable and stylish. {% endblock %}
+{% block title %}
+<h1> FIND YOUR </h1>
+{% endblock %}
+{% block body %} 
+<h1> FUTURE HOUSE </h1>
+{% endblock %}
+{% block paragraph %} 
+<p> A personal essay on the dream house I will someday live in. My ideal future home would be a spacious, well- designed house with plenty of outdoor space. The layout of the house should be designed to allow for plenty of privacy and flexibility. I would also like a home that is energy-efficient and environmentally friendly. In terms of furniture, I would prefer something that is both comfortable and stylish. </p> 
+{% endblock %}

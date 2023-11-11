@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Phudu:wght@300&display=swap" rel="stylesheet">
-    <title>{% block title %} Page Not Found {% endblock %} </title>
+    <title>{% block header %} Page Not Found {% endblock %} </title>
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
 
 </head>
@@ -19,12 +19,12 @@
 
             <div class="navigation-bar">
                 <div class="logo">
-                    <h1> {% block logo %} {% endblock%}</h1>
+                    {% block logo %} {% endblock%}
                 </div>
 
                 <div class="link-box">
                     <a href=""> Home</a>
-                    <a href=""> Properties</a>
+                    <a href="{ url 'main:properties_page_view'}"> Properties</a>
                     <a href=""> Service</a>
                     <a href=""> About</a>
                     <a href=""> Contract</a>
@@ -46,14 +46,14 @@
                 <div class="content-box">
                     <div class="content-body">
                         <div>
-                            <h1> {% block title %} {% endblock %}</h1>
+                            {% block title %} {% endblock %}
                         </div>
                         <div>
-                            <h1> {% block body %} {% endblock%}</h1>
+                            {% block body %} {% endblock %}
                         </div>
                     </div>
                     <div class="content-title">
-                        <p> {% block paragraph %} {% endblock %}</p>
+                        {% block paragraph %} {% endblock %}
                     </div>
                     <div class="content-button">
                         <a href="">Catalog</a>

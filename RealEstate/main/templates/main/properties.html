@@ -1,8 +1,17 @@
 {% extends 'main/base.html' %}
-{% block logo %} PROPERTIES {% endblock%}
+{% load static %}
+{% block logo %} 
+<h1>PROPERTIES</h1> 
+{% endblock%}
 {% block images %}
-<img class="image-background" src="{% static 'image/pages/properties.jpg' %}" alt="Home Image">
+<img class="image-background" src="{% static 'image/pages/properties.jpg' %}" alt="properties Image">
 {% endblock %}
-{% block title %} Florida Title Insurance &{% endblock %}
-{% block body %} Closing Services  {% endblock %}
-{% block paragraph %} At Properties Title, we offer title insurance services for residential and commercial real estate transactions throughout the State of Florida.We're proud to be a title company motivated by exceptional customer service, efficiency, innovative technology, an entrepreneurial spirit, and total commitment to excellence. {% endblock %}
+{% block title %} 
+<h1> Florida Title Insurance & </h1>
+{% endblock %}
+{% block body %} 
+<h1> Closing Services </h1> 
+{% endblock %}
+{% block paragraph %} 
+<p> At Properties Title, we offer title insurance services for residential and commercial real estate transactions throughout the State of Florida.We're proud to be a title company motivated by exceptional customer service, efficiency, innovative technology, an entrepreneurial spirit, and total commitment to excellence. </p> 
+{% endblock %}
