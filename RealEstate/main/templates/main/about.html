@@ -1,9 +1,20 @@
 {% extends 'main/base.html' %}
+{% load static %}
 {% block header %}
-HOME
+Anout Us Page
 {% endblock %}
-{% block logo %} {% endblock %}
-{% block images %} {% endblock %}
-{% block title %} {% endblock %}
-{% block body %} {% endblock %}
-{% block paragraph %} {% endblock %}
+{% block logo %}
+<h1>CONTRACT</h1>
+{% endblock%}
+{% block images %}
+<img class="image-background" src="{% static 'image/pages/about.jpg' %}" alt="Home Image">
+{% endblock %}
+{% block title %} 
+<h1>What Is Real Estate?</h1> 
+{% endblock %}
+{% block body %}
+<h1> Why should I care ?</h1>
+{% endblock %}
+{% block paragraph %}
+<p>Real estate is defined as the land and any permanent structures, like a home, or improvements attached to the land, whether natural or man-made. Real estate is a form of real property. It differs from personal property, which is not permanently attached to the land, such as vehicles, boats, jewelry, furniture, and farm equipment.</p>
+{% endblock %}

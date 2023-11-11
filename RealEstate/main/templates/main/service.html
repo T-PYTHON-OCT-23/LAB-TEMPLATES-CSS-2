@@ -1,9 +1,20 @@
 {% extends 'main/base.html' %}
+{% load static %}
 {% block header %}
-HOME
+Service Page
 {% endblock %}
-{% block logo %} {% endblock%}
-{% block images %} {% endblock %}
-{% block title %} {% endblock %}
-{% block body %} {% endblock %}
-{% block paragraph %} {% endblock %}
+{% block logo %}
+<h1>SERVICES</h1>
+{% endblock%}
+{% block images %}
+<img class="image-background" src="{% static 'image/pages/service.png' %}" alt="Home Image">
+{% endblock %}
+{% block title %} 
+<h1>REAL ESTATE SERVICES</h1> 
+{% endblock %}
+{% block body %}
+<h1>Providing PREMIUM Real Estate Services to Estate Agents throughout South Africa</h1>
+{% endblock %}
+{% block paragraph %}
+<p>Do you want to keep more of your commission while no longer being micromanaged while still getting all the support you need?</p>
+{% endblock %}
