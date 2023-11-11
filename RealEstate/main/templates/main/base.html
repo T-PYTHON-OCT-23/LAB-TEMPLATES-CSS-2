@@ -15,10 +15,11 @@
     <div class="root">
         <!-- navbar start-->
         <div class="upper">
-            <img class="image-background" src="{% static 'image/pages/home.webp' %}" alt="root image">
+            <img class="image-background" src="{% block images %} {% endblock %}" alt="root image">
+
             <div class="navigation-bar">
                 <div class="logo">
-                    <h1> {% block logo %} HOME {% endblock%}</h1>
+                    <h1> {% block logo %} {% endblock%}</h1>
                 </div>
 
                 <div class="link-box">
@@ -45,14 +46,14 @@
                 <div class="content-box">
                     <div class="content-body">
                         <div>
-                            <h1> FIND YOUR</h1>
+                            <h1> {% block title %} {% endblock %}</h1>
                         </div>
                         <div>
-                            <h1> FUTURE HOUSE</h1>
+                            <h1> {% block body %} {% endblock%}</h1>
                         </div>
                     </div>
                     <div class="content-title">
-                        <p> A personal essay on the dream house I will someday live in. My ideal future home would be a spacious, well- designed house with plenty of outdoor space. The layout of the house should be designed to allow for plenty of privacy and flexibility. I would also like a home that is energy-efficient and environmentally friendly. In terms of furniture, I would prefer something that is both comfortable and stylish.</p>
+                        <p> {% block paragraph %} {% endblock %}</p>
                     </div>
                     <div class="content-button">
                         <a href="">Catalog</a>
