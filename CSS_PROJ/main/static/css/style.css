@@ -1,0 +1,114 @@
+
+
+
+    
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+body{
+    background-image: url("/static/images/building.jpeg");
+    background-repeat: no-repeat;
+    background-size: 98%;
+    font-family: 'Phudu', sans-serif;
+    
+    
+    
+}
+.tit{
+    font-family: 'Phudu', sans-serif;
+    font-size: 9rem;
+    
+}
+button {
+    background-color: black;
+    border: none;
+    border-radius:25px;
+    width: 250px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    margin-top: 60px;
+    cursor: pointer;
+    }
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 60%;
+    text-align:center;
+    padding:1mm;
+    border-radius: 140px;
+    font-size: 16px;
+    margin: 10px;
+    background-color:white;
+    right: 150px;
+    left: 200px;
+    
+
+}
+
+.header {
+    overflow: hidden;
+    padding: 0px 7px;
+}
+
+
+.header-right {
+    top: 35px;
+    right: 0;
+    position: absolute;
+    display: flex;
+    justify-content: start;
+
+    }
+.footer-content{
+    display: flex;
+    justify-content:space-between;
+
+    }
+    #middle {
+        margin: 0 auto;
+        width: 1050px;
+        height: 175px;
+        margin-top: 89px;
+    }
+
+
+    #icons {
+        width: 502px;
+        height: 68px;
+        font-size: 11px;
+    }
+    .icon_middle {
+        float: right;
+        width: 100px;
+        height: 85px;
+    }
+    .box-header{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 50%;
+        text-align: center;
+        padding: 50px;
+        border-radius: 140px;
+        font-size: 16px;
+        margin: 20px;
+        background-color:white;
+        right: 150px;
+        left: 200px;
+        display: flex;
+        justify-content:space-between;
+
+    }
+
+ 
