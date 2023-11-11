@@ -1,0 +1,165 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Phudu:wght@500&display=swap" rel="stylesheet">
+    <link src="{% static 'images/building.jpeg' %}" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+
+
+    <title>Document</title>
+    <style>
+            
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+
+        body{
+            background-image: url("{% static 'images/building.jpeg' %}");
+            background-repeat: no-repeat;
+            background-size: 98%;
+            font-family: 'Phudu', sans-serif;
+           
+            
+            
+        }
+        .tit{
+            font-family: 'Phudu', sans-serif;
+            font-size: 9rem;
+            
+        }
+        button {
+            background-color: black;
+            border: none;
+            border-radius:25px;
+            width: 250px;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            margin-top: 60px;
+            cursor: pointer;
+            }
+        footer{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 60%;
+            text-align: center;
+            padding:1mm;
+            border-radius: 140px;
+            font-size: 16px;
+            margin: 20px;
+            background-color:white;
+            right: 150px;
+            left: 150px;
+            
+
+        }
+    
+        .header {
+            overflow: hidden;
+            padding: 0px 7px;
+        }
+
+     
+        .header-right {
+            top: 35px;
+            right: 0;
+            position: absolute;
+            display: flex;
+            justify-content: start;
+     
+            }
+        .footer-content{
+            display: flex;
+            justify-content:space-between;
+
+            }
+            #middle {
+                margin: 0 auto;
+                width: 1050px;
+                height: 175px;
+                margin-top: 89px;
+            }
+
+
+            #icons {
+                width: 502px;
+                height: 68px;
+                font-size: 11px;
+            }
+            .icon_middle {
+                float: right;
+                width: 100px;
+                height: 85px;
+            }
+            .box-header{
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 80%;
+                text-align: center;
+                padding: 50px;
+                border-radius: 140px;
+                font-size: 16px;
+                margin: 20px;
+                background-color:white;
+                right: 150px;
+                left: 150px;
+                display: flex;
+                justify-content:space-between;
+
+            }
+
+    </style>
+
+
+</head>
+<body>
+    <div class="header">
+    <h1 class="logo"> home</h1>
+    <div class="box-header"> <h4>home</h4><h4>properties</h4> <h4>service</h4> <h4>about</h4>  <h4>contacts</h4>   </div>
+    <h4 class="header-right"> <span style='font-size:20px;'> &#128100;</span> sign up </h4>
+</div>
+
+
+    <div class="tit-box">
+    <h1 class="tit"> FIND YOUR <br> DREAM </h1>
+    </div>
+    <p> our catalog will suprise you. Rather, discover <br> an unprecedented offers of luxury properties.</p>
+    <button> cataiog </button>
+</body>
+<footer>
+
+
+<div class="footer-content">
+    <div id="middle">
+        <div class="icon_middle"> <span class="material-symbols-outlined">apartment</span> <br> all</div>
+        <div class="icon_middle"> <span class="material-symbols-outlined">universal_local</span><br> land lots</div>
+        <div class="icon_middle"> <span class="material-symbols-outlined">account_balance</span> <br> office</div>
+        <div class="icon_middle">  <span class="material-symbols-outlined"> storefront</span> <br>store</div>
+        <div class="icon_middle"> <span class="material-symbols-outlined"> domain </span> <br>apartment</div>
+        <div class="icon_middle">  <span class="material-symbols-outlined"> storefront </span><br> villa</div>
+        <div class="icon_middle">  <span class="material-symbols-outlined"> storefront</span> <br>house</div>
+
+        <div id="middle_txt">
+        <div id="middle_border"></div>
+        </div><!--close_middle_txt-->
+      </div><!--middle-->
+</div>
+</footer>
+</html>
