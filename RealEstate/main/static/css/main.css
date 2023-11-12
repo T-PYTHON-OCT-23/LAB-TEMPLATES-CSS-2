@@ -1,0 +1,100 @@
+.imgsHome{
+    background-image: url('/static/img/imgHome.jpeg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 1000px;
+}
+
+.toppage{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+
+}
+#Home{
+    font-size: 25px;
+    font-family: 'Satisfy', cursive;
+    margin-left: 30px;
+}
+
+
+.list{
+    display: flex;
+    flex-direction: row;
+    gap:4rem;
+    background-color: rgb(241, 243, 248);
+    border-radius: 30px;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 20px;
+
+    
+}
+nav a{
+    text-decoration: none;
+}
+.Sigin{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    margin-right: 10px;
+}
+.contant{
+    font-family: 'Phudu', sans-serif;
+    font-size:90px;
+    margin-left: 30px;
+    font-weight:bold;
+   
+   
+}
+.baseContant{
+    font-size:25px;
+    margin: 30px;
+    margin-bottom: 20px;
+    color: rgb(29, 29, 29);
+}
+
+button{
+    display: inline;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 50px
+}
+.basefooter{
+    background-color: rgb(247, 250, 252);
+    border-radius: 45px;
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 1px;
+    margin-top: 220px;
+    padding: 30px;
+    margin-left: 23%;
+
+     
+}
+.footerList{
+    bottom: 0;
+    width: 100%;
+}
+.icon {
+    background-color: rgb(98, 173, 239);
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 24px;
+    margin: 0 15px;
+}
+
+
