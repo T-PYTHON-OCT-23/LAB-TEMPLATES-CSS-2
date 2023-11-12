@@ -1,0 +1,122 @@
+.navbar-main{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    
+    
+    
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background-color:white;
+    inline-size:500px ;
+    block-size: 50px;
+    align-items:center;
+    border-radius: 30px;
+
+}
+nav a {
+    text-decoration: none;
+}
+.logo-left{
+    display: flex;
+    justify-content: flex-start;
+    width: 60px;
+}
+.logo-right{
+    display: flex;
+    justify-content: flex-end;
+    width: 60px;
+}
+
+.contant{
+    display: flex;
+    flex-direction: column ;
+    align-items:start;
+    justify-content: space-between;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 250px;
+    width: 30%;
+}
+body{
+
+    background-image: url(/static/imgs/background--building.jpg);
+    background-repeat:round;
+    object-fit:scale-down;
+
+    
+    
+}
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 115px;
+    
+    
+}
+.option{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    background-color:white;
+    inline-size:1000px ;
+    block-size: 100px;
+    align-items:center;
+    border-radius: 30px;
+    
+
+}
+.big-tital{
+    font-size: 3.5rem;
+    font-family: 'Phudu', sans-serif;
+}
+
+.main-pargraf{
+    font-size: 0.80rem;
+}
+.button{
+    display: flex;
+    align-items:center;
+
+
+}
+button{
+background-color: black;
+color: beige;
+block-size: 50px ;
+inline-size:150px ;
+border-radius: 30px;
+
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 100,
+  'GRAD' 70,
+  'opsz' 30
+  
+}
+
+#icon{
+    display: flex;
+    flex-direction: column ;
+    block-size: 50px ;
+    inline-size:50px ;
+    border-radius: 100px;
+    align-items:center;
+    
+
+}
+
+.background{
+    margin: 10px 40px;
+    
+
+
+}
