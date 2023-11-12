@@ -40,7 +40,7 @@ nav{
      }
 
 
-    .nav-links {
+    .nav-links a {
         display: flex;
         flex-direction: row;
         gap: 60px;
@@ -48,6 +48,7 @@ nav{
         margin-top: 35px;
         margin-left: 50px;
         font-family: Phudu;
+        text-decoration: none;
     }
     .nav-links2 {
         display: flex;
@@ -121,5 +122,10 @@ nav{
         border-radius: 30px;
         background-color: #000000;
     }
+
+    a :hover{
+        text-decoration: none;
+    }
+   
 
    
