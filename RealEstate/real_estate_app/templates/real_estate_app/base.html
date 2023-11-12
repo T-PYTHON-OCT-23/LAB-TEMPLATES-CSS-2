@@ -15,16 +15,16 @@
 </head>
 <body>
             <header class="header">
-                <h1 class="logo-name"> Home <span><img class="logo" src="{% static 'images/key1.png' %}"/> </span></h1>
-                <ul class="top-bar">
-                    <li>Home</li>
-                    <li>Properties</li>
-                    <li>Service</li>
-                    <li>About</li>
-                    <li>Contacts</li>
-                </ul>
+                <h1 class="logo-name">Home <span><img class="logo" src="{% static 'images/key1.png' %}"/> </span></h1>
 
-                <p class="sign-up"> <span> <img class="img-user" src="{% static 'images/add-user.png' %}" /> </span>Sign up</p>
+                <ul class="top-bar">
+                    <a href="">Home</a>
+                    <a href="">Properties</a>
+                    <a href="">Service</a>
+                    <a href="">About</a>
+                    <a href="">Contacts</a>
+                </ul>
+                <a class="sign-up" href="https://www.expedia.com/">Sign up<span> <img class="img-user" src="{% static 'images/add-user.png' %}" /> </span></a>
             </header>
 
               {% block content %}
