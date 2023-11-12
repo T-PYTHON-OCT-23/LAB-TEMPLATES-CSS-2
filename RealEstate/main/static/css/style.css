@@ -1,19 +1,31 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
 .header{
     display: flex;
     justify-content: space-around;
-   
     align-items: center;
+    position: fixed;
+    width: 100%;
+    margin-top: 3px;
+    
+
     
     
 }
-body {
-
+.home{
+   
     background-image: url('/static/images/building.jpg');
     
     background-size: cover;
+    
+    margin-top: 0rem;
+    
 }
 
 .content{
+    padding-top: 2rem;
     margin-left: 30px;
     width: 50%;
     font-family: 'Phudu';
@@ -47,7 +59,10 @@ footer{
     display:flex;
     justify-content: center;
     margin-top: auto;
-    
+    margin-top: -39px;
+    box-shadow: 0px 1px black;
+
+
     
     
 }
@@ -86,6 +101,7 @@ label{
     background-color: white;
     border-radius: 20px;
     width: 50%;
+    
 }
 .nav-content a{
  text-decoration: none;
