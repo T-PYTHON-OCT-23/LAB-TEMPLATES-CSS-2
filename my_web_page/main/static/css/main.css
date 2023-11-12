@@ -1,0 +1,72 @@
+body{
+    font-family: 'Phudu', sans-serif;
+    flex-wrap: wrap;
+    background-image: url('/static/images/home_page_img.jpeg');
+    flex-direction: column;
+}
+
+nav{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+}
+.nav_left{
+
+    padding: 5px;
+    margin: 5px;
+    
+}
+.nav_center{
+    background-color: white;
+    border-radius: 10px;
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+    margin: 5px;
+}
+.nav_right{
+    padding: 5px;
+    margin: 5px;
+}
+footer{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: end;
+    padding: 5px;
+    margin: 5px;
+}
+.footer_div{
+    width: 70%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    overflow-wrap: normal;
+    padding: 5px;
+    margin: 5px;
+}
+.content_sec{
+    display: flex;
+    justify-content: left;
+    padding: 40px;
+    margin: 40px;
+    
+}
+h1{
+    font-size: 100px;
+    display: flex;
+}
+.cat{
+    background-color: blue;
+    border-radius: 10%;
+    padding: 10px;
+    margin: 10px;
+}
