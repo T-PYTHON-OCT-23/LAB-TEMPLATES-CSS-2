@@ -1,16 +1,23 @@
 
 {% extends 'main1/base.html' %}
 {% load static %}
-{% block title %} RealEstate {% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>{% block title %} RealEstate {% endblock %} </title>
+
+</head>
 
 
+<body>
 {% block content %}
     
 <div>
 
-<h1>find your dream</h1>
+<h1>find your <br> dream</h1>
 <h6>our catalog will suporise rather,discover </h6>
-<h6>\an unprecedentd offers of luxuryproperties</h6>
+<h6>an unprecedentd offers of luxuryproperties</h6>
     <img class="body-image" src="{% static 'image/b.jpg' %}" alt="a building image" />
 
 
@@ -62,3 +69,6 @@
     </div>
 
     {% endblock  %}
+</body>
+
+</html>
