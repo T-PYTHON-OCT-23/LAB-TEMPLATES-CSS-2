@@ -12,7 +12,3 @@ def home_view(request:HttpRequest):
     
     return render(request, 'main1/home.html')
 
-def base_view(request:HttpRequest):
-
-    
-    return render(request, 'main1/base.html')
