@@ -8,7 +8,7 @@ body{
     width: 80%;
     padding: 10px;
     padding-right: 10px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'phudu', sans-serif;
 
 
 
@@ -85,6 +85,7 @@ nav{
 .icon2{
     width: 60px;
     margin-right: 40px;
+    color: brown;
 }
 
 nav a {
@@ -109,6 +110,7 @@ nav a {
     padding-right: 600px;
     padding: center;
     border-radius: 200px;
+    background-position: 50% 50%;
     
 
   }
