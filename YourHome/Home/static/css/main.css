@@ -1,16 +1,17 @@
 body {
-    font-family: 'Phudu';
+    font-family: 'Phudu',
+        sans-serif;
     margin: 0px;
     padding: 0px;
     background-color: aliceblue;
-    background-image: url(/static/images/Home.jpg);
+    background-image: url(/static/images/background..png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-blend-mode: luminosity;
+    background-blend-mode: normal;
 }
 
 .logo {
-    font-family: 'Phudu';
+    font-family: 'Phudu', sans-serif;
     width: 60px;
     height: auto;
     padding: 5px;
@@ -31,7 +32,7 @@ body {
 }
 
 nav {
-    font-family: 'Phudu';
+    font-family: 'Phudu', sans-serif;
     background-color: rgba(255, 255, 255, 0);
     padding: 10px;
     opacity: 100%;
@@ -47,7 +48,7 @@ nav {
     text-align: center;
     width: 70%;
     height: 60px;
-    margin-left: 110px;
+    margin-left: 70px;
     margin-top: 0px;
     padding: 10px;
     background-color: rgb(232, 232, 223);
@@ -61,21 +62,25 @@ nav {
 }
 
 a {
-    font-family: 'Phudu';
+    color: black;
+    font-family: 'Phudu', sans-serif;
     position: relative;
+    text-decoration: none;
 }
 
 a:hover {
-    font-family: 'Phudu';
-    color: rgb(18, 59, 53);
+    font-family: 'Phudu', sans-serif;
+    color: rgb(8, 138, 119);
     font-size: larger;
     transition-duration: 0.2s;
+    text-decoration: none;
 }
 
 .title {
-    color: rgb(139, 117, 37);
-    text-shadow: 4px 3px 5px rgb(55, 51, 35);
+    color: rgb(3, 45, 77);
+    text-shadow: 4px 3px 5px rgb(101, 101, 99);
     font-family: 'Phudu';
+    font-weight: bolder;
     position: relative;
     width: 40%;
     height: auto;
@@ -85,11 +90,11 @@ a:hover {
 }
 
 .suptitle {
-    font-family: 'Phudu';
+    font-family: 'Phudu', sans-serif;
     position: relative;
-    color: rgb(46, 39, 14);
-    text-shadow: 3px 3px 5px rgb(55, 51, 35);
-    width: 40%;
+    color: rgb(3, 45, 77);
+    text-shadow: 2px 2px 5px rgb(101, 101, 99);
+    width: 30%;
     height: auto;
     padding: 20px;
     margin: 20px;
@@ -98,12 +103,12 @@ a:hover {
 }
 
 .C {
-    font-family: 'Phudu';
+    font-family: 'Phudu', sans-serif;
     width: 120px;
     height: auto;
     padding: 20px;
     margin: 20px;
-    background-color: rgb(46, 39, 14);
+    background-color: rgb(3, 45, 77);
     color: antiquewhite;
     border-radius: 50px;
 
@@ -117,9 +122,10 @@ a:hover {
 }
 
 footer {
-    font-family: 'Phudu';
-    background-color: rgba(255, 255, 255, 0);
-    padding: 10px;
+    color: black;
+    font-family: 'Phudu', sans-serif;
+    background-color: rgba(26, 4, 4, 0);
+    padding: 5px;
     opacity: 100%;
     padding-left: 60px;
     margin-left: 60px;
@@ -128,11 +134,11 @@ footer {
 }
 
 .links {
-    font-family: 'Phudu';
+    font-family: 'Phudu', sans-serif;
     text-align: center;
     width: 70%;
     height: 60px;
-    margin-left: 60px;
+    margin-left: 40px;
     margin-top: 0px;
     padding: 30px 100px 30px 100px;
     background-color: rgb(232, 232, 223);
@@ -146,15 +152,17 @@ footer {
 }
 
 .b {
-    font-family: 'Phudu';
-    position: relative;
-    border-radius: 50px;
-    border: solid 1px rgb(232, 232, 223);
+    color: black;
+    font-family: 'Phudu', sans-serif;
+    position: center;
+    width: 2rem;
+    text-decoration: none;
 }
 
 .b:hover {
-    font-family: 'Phudu';
-    color: rgb(18, 59, 53);
+    font-family: 'Phudu', sans-serif;
+    color: rgb(8, 138, 119);
     font-size: larger;
     transition-duration: 0.2s;
+    text-decoration: none;
 }
