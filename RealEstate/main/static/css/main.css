@@ -1,69 +1,189 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
 body {
     font-family: 'Ubuntu', sans-serif;
-    background-image: url('static/images/backgrond2.jpg');
-    background-size: cover;
+
+    height: 100vh;
+    padding-bottom: 20vh;
 }
 
-
-
-/*nav bar*/
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+h1, h2, h3, h4, h5 {
+    font-family: 'phudu', sans-serif;
 }
 
-nav img {
+p, a {
+    font-family: 'ubuntu', sans-serif;
+}
+
+.logo {
+    font-size: 3rem;
     width: 100px;
     padding-left: 50px;
 }
 
-.nav-links {
-    background-color: #ffff;
-    border-radius: 50px;
-    padding: 15px;
-    display: flex;
+/*nav bar*/
+.top-nav-container {
+    position: fixed;
+    top:0px;
+    left:0px;
+    width: 100%;
+    padding-top: 7vh;
     justify-content: space-between;
+    align-items: center;
 }
 
-li {
+.top-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 7vw;
+    padding-right: 7vw;
+}
+
+.nav-links {
     list-style: none;
-    margin: 5px 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    background-color: rgb(192, 193, 243);
+    border-radius: 100px;
+    padding: 2rem 4rem;
+    justify-content: space-between;
 }
 
 .nav-links li a {
     text-decoration: none;
     color: #4d4d4d; 
-    font-size: 20px;
+    font-size: 15px;
 }
 
 /*sign-up Button*/
-button {
+/*button {
     margin-right: 50px;
     padding: 15px 40px;
     color: aliceblue;
     border-radius: 50px;
     background-color: #403CFF;
     border: none;
+}*/
+
+.signup-container {
+    display: flex;
+    align-items: center;
+    gap: 2px;
 }
 
-/*content*/
-.content {
-    margin-left: 50px;
-    margin-right: 80px;
-}
-.content h1 {
-    font-family: 'Phudu', sans-serif;
-    font-size: 200px;
-    margin-bottom: 10px;
+.top-nav a {
+    text-decoration: none;
+    color: black;
 }
 
-/*Cataigo Button*/
-.content button {
-    margin-right: 50px;
-    padding: 15px 100px;
-    color: aliceblue;
-    border-radius: 50px;
+.homepage-content {
+    padding: 24vh 10vw;
+    padding-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    background-image: url('/static/images/backgrond2.jpg');
+    background-size: cover;
+}
+
+.homepage-content h1 {
+    font-size: 5rem;
+}
+
+.homepage-content .btn {
+    color: white;
+    text-decoration: none;
     background-color: black;
-    border: none;
+    padding: 6px 35px;
+    border-radius: 15px;
+    
+}
+
+.sub-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 2rem;
+    align-items: start;
+}
+
+.bottom-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.bottom-nav {
+    background-color: white;
+    padding: 2rem 5rem;
+    border-radius: 6rem;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    margin-top: 6rem;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.service-item span {
+    font-size: 2rem;
+    background-color: rgb(24, 45, 232);
+    border-radius: 50%;
+    padding: 1rem;
+    
+}
+
+.body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; /* Adjust the padding as needed */
+    background-color: #c2c0c0;
+    width: 100%; /* Adjust the width as needed */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.about {
+    width: 50%;
+    text-align: center;
+}
+
+.about h1, .about p {
+    margin: 0; /* Remove default margin */
+}
+
+.about-image {
+    width: 30%; /* Set the desired width */
+    text-align: right;
+}
+
+img {
+    width: 100%; /* Make the image fill its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.large {
+   font-size: 50px;
 }

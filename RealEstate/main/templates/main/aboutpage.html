@@ -1,7 +1,29 @@
 {% extends 'main/base.html' %}
 {% load static %}
 
-{% block title %} Home Page {% endblock %}
+{% block title %} About Page {% endblock %}
 
 {% block content %}
+<div class="body"></div>
+    <div class="about-content">
+
+        <div class="about">
+            <h1>About Real Estate</h1>
+            <p>
+                Real estate involves buying, selling, and leasing properties like homes and commercial spaces.
+                It's vital to the economy, influenced by factors like economic trends and government policies.
+                Real estate is not just a financial investment but also shapes communities and impacts quality of life.
+                Technology has made transactions more accessible. Despite its cycles, real estate is fundamental for
+                wealth creation and reflects societal aspirations. As cities evolve, the industry presents challenges
+                and opportunities for investors and residents.
+            </p>
+        </div>
+
+        <div class="about-image">
+            <img src="{% static '/images/real-estate.webp'%}" alt="">
+        </div>
+
+    </div>
+</div>
+
 {%endblock%}
