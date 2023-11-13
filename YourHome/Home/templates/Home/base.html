@@ -19,7 +19,7 @@
     <link href="/static/css/main.css" rel="stylesheet" />
 </head>
 
-<body>
+<body {% if "size" in request.COOKIES and request.COOKIES.size=="large" %} class==large %}{% endif %}>
     <div>
         <nav>
             <div>
@@ -30,10 +30,12 @@
                 <a href="/"> Home </a>
                 <a href=""> Properties </a>
                 <a href=""> Service </a>
-                <a href=""> About </a>
+                <a href="/about/"> About </a>
                 <a href=""> Contact </a>
             </div>
-            <button class="logo"> Sign up </button>
+            <a href="" class="logo"> Sign up </a>
+            <a href="{% url 'Home:large_size' %}" class="logo"> large </a>
+            <a href="{% url 'Home:small_size' %}" class="logo"> small </a>
         </nav>
     </div>
 
