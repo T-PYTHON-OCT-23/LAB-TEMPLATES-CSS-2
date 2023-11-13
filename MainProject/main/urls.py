@@ -10,6 +10,6 @@ urlpatterns = [
      path("services/", views.services_view, name="services_view"),
      path("about/", views.about_view, name="about_view"),
      path("contact/", views.contact_view, name="contact_view"),
-
-
+     path("size/small/", views.small_view, name="small_view"),
+     path("size/large/", views.large_view , name="large_view"),
 ]
