@@ -1,82 +1,46 @@
-
-
-
-  
-
-{% load static %}
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
-<title>{% block title %} RealEstate {% endblock %} </title>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Home page</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Phudu:wght@300&display=swap">
-<link rel="stylesheet" href="/static/css/main.css" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Phudu&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="/static/css/main.css" />
+    <title>Document</title>
 </head>
+<body  {% if "mode" in request.COOKIES and request.COOKIES.mode == "small" %} class="small" {% endif %}>
 
 
-<body>
-{% block content %}
-    
-<div>
+    <div class="top-nav-container">
+        <nav class="top-nav">
 
-<h1>find your <br> dream</h1>
-<h6>our catalog will suporise rather,discover </h6>
-<h6>an unprecedentd offers of luxuryproperties</h6>
-    <img class="body-image" src="{% static 'image/b.jpg' %}" alt="a building image" />
+            <h2 class="logo">Home</h2>
 
+            <div class="top-bar">
+                <a href="">Home</a>
+                <a href="">Properties</a>
+                <a href="">Services</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+            </div>
 
+            <div class="signup-container">
+                <span class="material-symbols-outlined">person</span>
+                <a href="">Sign up</a>
+                <div class="display-mode">
+                    
+                    <a href="{% url 'main1:small_mode_view' %}"><span class="material-symbols-outlined">zoom_out</span></a>
+                    <a href="{% url 'main1:big_mode_view' %}"><span class="material-symbols-outlined">zoom_in</span></a>
+                </div>
+            </div>
 
-</div>
-<img src="{% static 'image/homeicon.png' %} "alt="Home" class="home-icon">
-    
-  
-    <img src="{% static 'image/sing.png' %} " alt="Sign Up" class="signup-icon">
-
-    
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Properties</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contacts</a></li>
-        </ul>
-    </nav>
-
-    <div class="content">
-        <h1>find your dream</h1>
-       <p> our catalog will suporise rather,discover
-        an unprecedentd offers of luxuryproperties
-
-       </p> 
-      
-       
+        </nav>
     </div>
 
-   
-    <div class="icons-section">
-        <img src="{% static 'image/house.png' %}"  alt="House"><span>House</span>
-        <img src="{% static 'image/villa.png' %} " alt="Villa"><span>Villa</span>
-        <img src="{% static 'image/apartment.png' %} " alt="Apartment"><span>Apartment</span>
-        <img src="{% static 'image/store.png' %} " alt="Store"><span>Store</span>
-        <img src="{% static 'image/office.png' %} " alt="Office"><span>Office</span>
-        <img src="{% static 'image/land.jpg' %} "alt="Land"><span>Land</span>
-        <img src="{% static 'image/lost.png' %} " alt="Lost"><span>Lost</span>
-        <img src="{% static 'image/all.png' %} " alt="All"><span>All</span>
-    </div>
+    {% block content %}
 
+    {% endblock %}
     
-    <div class="center-text">
-        <h2>Find Your Dream</h2>
-        <p style="font-size: 14px;">Our catalog will surprise you. Rather, discover an unprecedented offers of luxury properties.</p>
-        <button clss="button">catalog</button>
-    </div>
-
-    {% endblock  %}
 </body>
-
 </html>

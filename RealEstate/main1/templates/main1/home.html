@@ -1,19 +1,48 @@
 
+{% extends 'main1/base.html' %}
 
-
-{% extends 'RealEstate/base.html'%}
-{% load static %}
-{%block title %} home page {%endblock%}
 {% block content %}
+
+
+    <div class="homepage-content">
+        <div class="sub-content">
+            <h1>Find Your Dreams</h1>
+
+            <p>Our catalog will surprise you. Rather, discover an unprecendented offers of luxury properties. Our catalog will surprise you. Rather, discover an unprecendented offers of luxury properties.</p>
     
-<div>
+            <a class="btn" href="#">catalog</a>
+        </div>
 
-<h1>find your <br> dream</h1>
-<h6>our catalog will suporise rather,discover </h6>
-<h6>an unprecedentd offers of luxuryproperties</h6>
-   
+    </div>
+
+    <div class="bottom-container">
+
+        <div class="bottom-nav">
+
+            <div class="service-item" id="house">
+                <span class="material-symbols-outlined">house</span>
+                <h5>All</h5>
+            </div>
+
+            <div class="service-item" id="properties">
+                <span class="material-symbols-outlined">factory</span>
+                <h5>Properties</h5>
+            </div>
 
 
-</div>
+            <div class="service-item" id="hotel">
+                <span class="material-symbols-outlined">king_bed</span>
+                <h5>Hotel</h5>
+            </div>
 
-    {% endblock  %}
+            <div class="service-item" id="villa">
+                <span class="material-symbols-outlined">villa</span>
+                <h5>Villa</h5>
+            </div>
+
+        </div>
+
+    </div>
+
+
+{% endblock %}

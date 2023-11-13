@@ -1,0 +1,18 @@
+{% extends 'main1/base.html' %}
+
+{% block content %}
+
+
+
+    <div class="anotherbage-content ">
+    <div class="small"   >
+        <p  {% if "mode" in request.COOKIES and request.COOKIES.mode == "small" %} class="small" {% endif %}></p>>Real estate is the land, the earth beneath it, the air above it, its attachments to it,
+            and its legal rights. In business terms, real estate is an instrument of investment
+        </div>
+
+
+    </div>
+   
+
+
+{% endblock %}
