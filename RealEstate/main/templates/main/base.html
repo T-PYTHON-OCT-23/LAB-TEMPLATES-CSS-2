@@ -12,76 +12,30 @@
 <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
 </head>
-<body>
+<body {% if "font" in request.COOKIES and request.COOKIES.font == "large" %} class="large" {% endif %} >
     <header class="header" >
         <div class="page-title" >Home</div>
         <div class="nav-content" >
-            <a href="">Home</a>
+            <a href="/">Home</a>
             <a href="">Properties</a>
             <a href="">Service</a>
-            <a href="">About</a>
+            <a href="{% url 'main:about' %}">About</a>
             <a href="">Contacts</a>
         </div>
         <div class="sign-up" >
             <a href=""><span class="material-symbols-outlined">
             person
-            </span>sign up</a></div>
+            </span>sign up</a>
+          
+        </div>
+        <div class="font-size" ><p>font size:</p><div><a href="{% url 'main:font_large' %}"><p style="font-size: 150% ; color:red;">Z</p></a><a href="{% url 'main:font_small' %}"><p style="width: 150%; color:red;" >z</p></a></div>
+
+        </div>
     </header>
 
     {% block content %}
 
     {% endblock %}
-    <footer>
-        <div class="footer">
-            <span><a href="" id="house-log" class="material-symbols-outlined">
-                house
-                </a>
-                <br>
-            <label for="house-log">house</label></span>
-            <span>
-                <a href="" id='villa' class="material-symbols-outlined">
-                    villa
-                    </a><br>
-                <label for="villa">villa</label>
-            </span>
-            <span>
-                <a id="store" href="" class="material-symbols-outlined">
-                    store
-                    </a>
-    
-                    <br>
-                    <label for="store">store</label> 
-            </span>
-            <span>
-                <a id="apartment" href="" class="material-symbols-outlined">
-                    apartment
-                    </a>
-                    <br>
-                    <label for="apartment">apartment</label>
-            </span>
-    
-            <span>
-                <a id="location_city" href=""class="material-symbols-outlined">
-                    location_city
-                    </a>
-                    <br>
-                    <label for="location_city">all</label>
-            </span>
-    
-            <span>
-                <a href="" id="home-logo" class="material-symbols-outlined">
-                    home
-                    </a>
-                    <br>
-                    <label for="home-logo">office</label> 
-            </span>
-            <span>
-                <a href="" class="material-symbols-outlined">
-                    map        
-                </a><br>
-                <label>city location</label>
-            </span>
-        </div>
-    </footer>
+
 </body>
 </html>

@@ -10,9 +10,6 @@
     width: 100%;
     margin-top: 3px;
     
-
-    
-    
 }
 .home{
    
@@ -126,4 +123,34 @@ label{
 
     flex-direction: column;
     min-height: 100vh;
+}
+
+.about{
+    display: flex;
+    padding-top: 3rem;
+    justify-content: space-between;
+    
+}
+.about img{
+    width: 30%;
+}
+
+.large {
+    font-size: 200%;
+}
+
+.font-size{
+    width: 10%;
+    border: 0px;
+    border-radius: 20px;
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    
+}
+.font-size a{
+    text-decoration: none;
+    
 }
