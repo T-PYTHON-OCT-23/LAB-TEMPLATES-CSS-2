@@ -12,21 +12,24 @@
     <title>{% block title%}{% endblock%}</title>
 
 </head>
-<body>
+<body {% if "size" in request.COOKIES and request.COOKIES.size == "large" %} class="large" {% elif "size" in request.COOKIES and request.COOKIES.size == "small" %} class="small" {% endif %} >
     <div class="top-nav-container">
     <nav class="top-nav">
-    <span class="material-symbols-outlined"> home </span>
+    <a href="{% url 'main:home_page'%}"><span class="material-symbols-outlined"> home </span></a>
     <div class="top-bar">
-        <a href="">home</a>
+        <a href="{% url 'main:home_page'%}">home</a>
         <a href="">Properties</a>
         <a href="">Service</a>
-        <a href="">About</a>
+        <a href="{% url 'main:about_page' %}">About</a>
         <a href="">Contact</a>
     </div>
     <div class="signup-container">
         <span class="material-symbols-outlined">person</span>
         <a href="">Sign up</a>
+        <a href="{% url 'main:large_size_view'%}"><span class="material-symbols-outlined">zoom_in</span></a>
+        <a href="{% url 'main:small_size_view'%}"><span class="material-symbols-outlined">zoom_out</span></a>
     </div>
+    
     </nav>
     </div>
     {% block content%}
