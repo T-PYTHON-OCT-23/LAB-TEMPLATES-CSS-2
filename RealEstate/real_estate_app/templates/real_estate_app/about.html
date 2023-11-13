@@ -1,0 +1,23 @@
+{% extends 'real_estate_app/base.html' %}
+{% load static %}
+
+{% block title %}
+About page 
+{% endblock %}
+
+{% block content %}
+
+<body {% if "font" in request.COOKIES and request.COOKIES.font == "large" %} class="large" {% endif %}>
+    <div class="box-about-page"> 
+        <div class="about-page">
+            <div class="display-mode">
+                <a class="large-background" href="{% url 'real_estate_app:large_font_view' %}"><span class="material-symbols-outlined">text_increase</span></a>
+                <a class="small-background" href="{% url 'real_estate_app:small_font_view' %}"><span class="material-symbols-outlined">text_decrease</span></a>
+            </div>
+            <p>Real estate is the property, land, buildings, air rights above the land and underground rights below the land. It can be classified into four types: residential, commercial, industrial and land. Real estate is one of the most important sectors of the economy, as it provides shelter, workspace, infrastructure and natural resources for various activities. </p>
+            <img src="{% static 'images/img.jpg' %}">
+        </div>
+    </div>
+</body>
+
+{% endblock %}

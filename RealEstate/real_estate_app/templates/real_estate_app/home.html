@@ -6,11 +6,23 @@ Home page
 {% endblock %}
 
 {% block content %}
+<div class="home-page">
+        <div class="box"> 
+                <h1 class="title1"> FIND YOUR DREAM</h1>
+                <p class="title2">Our catalog will suprise you. Rather, discover an unprecedented offers of luxury properties. </p>
+                <a class="catalog" href="">Catalog</a> >
+        </div>
 
-<div class="box"> 
-        <h1 class="title1"> FIND YOUR DREAM</h1>
-        <p class="title2">Our catalog will suprise you. Rather, discover an unprecedented offers of luxury properties. </p>
-        <a class="catalog" href="">Catalog</a> >
+<footer class="footer">
+        <ul class="toolbar">
+            <li> <img class="icons" src="{% static 'images/green-home.png' %}" /> All</li>
+            <li> <img class="icons" src="{% static 'images/landd.png' %}" />Land lots</li>
+            <li> <img class="icons" src="{% static 'images/folder.png' %}" />Office</li>
+            <li> <img class="icons" src="{% static 'images/shopping-cart.png' %}" />Store</li>
+            <li> <img class="icons" src="{% static 'images/apartment.png' %}" />Apartment</li>
+            <li> <img class="icons" src="{% static 'images/villa.png' %}" />Villa</li>
+            <li> <img class="icons" src="{% static 'images/housee.png' %}" />House</li>
+        </ul>   
+      </footer> 
 </div>
-
 {% endblock %}

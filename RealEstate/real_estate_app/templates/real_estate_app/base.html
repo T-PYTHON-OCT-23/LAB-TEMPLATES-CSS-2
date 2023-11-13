@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Oswald&family=Phudu:wght@500&family=Roboto+Slab&display=swap" rel="stylesheet">
     <title>{% block title%} {% endblock %}</title>
@@ -14,35 +15,23 @@
 
 </head>
 <body>
-            <header class="header">
-                <h1 class="logo-name">Home <span><img class="logo" src="{% static 'images/key1.png' %}"/> </span></h1>
+            <div class="header1">
+                <div class="top-nav">
+                    <h1 class="logo-name">Home <span><img class="logo" src="{% static 'images/key1.png' %}"/> </span></h1>
 
                 <ul class="top-bar">
-                    <a href="">Home</a>
+                    <a href="/">Home</a>
                     <a href="">Properties</a>
                     <a href="">Service</a>
-                    <a href="">About</a>
+                    <a href="{% url 'real_estate_app:about_page' %}">About</a>
                     <a href="">Contacts</a>
                 </ul>
                 <a class="sign-up" href="https://www.expedia.com/">Sign up<span> <img class="img-user" src="{% static 'images/add-user.png' %}" /> </span></a>
-            </header>
+
+                </div>
+            </div>
 
               {% block content %}
-              {% endblock %}
-
-              <footer class="footer">
-                <ul class="toolbar">
-                    <li> <img class="icons" src="{% static 'images/green-home.png' %}" /> All</li>
-                    <li> <img class="icons" src="{% static 'images/landd.png' %}" />Land lots</li>
-                    <li> <img class="icons" src="{% static 'images/folder.png' %}" />Office</li>
-                    <li> <img class="icons" src="{% static 'images/shopping-cart.png' %}" />Store</li>
-                    <li> <img class="icons" src="{% static 'images/apartment.png' %}" />Apartment</li>
-                    <li> <img class="icons" src="{% static 'images/villa.png' %}" />Villa</li>
-                    <li> <img class="icons" src="{% static 'images/housee.png' %}" />House</li>
-                </ul>   
-              </footer>
-
-                     
-                
+              {% endblock %}                      
 </body> 
 </html>
