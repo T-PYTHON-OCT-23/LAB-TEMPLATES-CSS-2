@@ -1,6 +1,5 @@
 
 
-
     
 .material-symbols-outlined {
     font-variation-settings:
@@ -11,12 +10,10 @@
 }
 
 body{
-    background-image: url("/static/images/building.jpeg");
+   background-image: url("/static/images/building.jpeg");
     background-repeat: no-repeat;
     background-size: 98%;
-    font-family: 'Phudu', sans-serif;
-    
-    
+    font-family: 'Phudu', sans-serif;    
     
 }
 .tit{
@@ -28,7 +25,6 @@ button {
     background-color: black;
     border: none;
     border-radius:25px;
-    width: 250px;
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -39,26 +35,37 @@ button {
     margin-top: 60px;
     cursor: pointer;
     }
-footer{
-    position: fixed;
-    left: 0;
+
+    footer{
+        overflow: hidden;
+        padding: 0px 7px;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+.footer-content{
+   position: fixed;
     bottom: 0;
-    width: 60%;
-    text-align:center;
-    padding:1mm;
+    text-align: center;
+    padding: 1px;
     border-radius: 140px;
     font-size: 16px;
-    margin: 10px;
+    margin: 20px;
     background-color:white;
-    right: 150px;
-    left: 200px;
-    
+    right: 450px;
+    left: 450px;
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
 
 }
 
 .header {
     overflow: hidden;
     padding: 0px 7px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
 }
 
 
@@ -68,13 +75,10 @@ footer{
     position: absolute;
     display: flex;
     justify-content: start;
+    padding-right: 45px;
 
     }
-.footer-content{
-    display: flex;
-    justify-content:space-between;
 
-    }
     #middle {
         margin: 0 auto;
         width: 1050px;
@@ -97,18 +101,35 @@ footer{
         position: fixed;
         left: 0;
         top: 0;
-        width: 50%;
         text-align: center;
-        padding: 50px;
+        padding: 25px;
         border-radius: 140px;
         font-size: 16px;
         margin: 20px;
         background-color:white;
-        right: 150px;
-        left: 200px;
+        right: 450px;
+        left: 450px;
         display: flex;
+        flex-direction: row;
         justify-content:space-between;
 
+    }
+    .about-content{
+        padding: 15px;
+        margin-top: 6rem;
+        margin-right: 88rem;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .font-size-mode{
+        color: black;
+        display: flex;
+        flex-direction: row;
+
+    }
+    .large{
+        font-size: 100px;
     }
 
  
