@@ -11,14 +11,14 @@
     <title>{% block title %}  {% endblock %}</title> 
     
 </head>
-<body  {% if "fintsize" in request.COOKIES and request.COOKIES.fintsize == "large" %}  font-size:x-large  class="large" {% endif %}>
+<body  {% if "fontsize" in request.COOKIES and request.COOKIES.fontsize == "large" %}    class="large" {% endif %}>
  
 
     <div class="nav-container">
         <nav class="nav-links">
 
     <div class="logo">
-        <img  width="64" height="64" src="https://img.icons8.com/cotton/64/home--v3.png" alt="home--v3"/> 
+        <a href="{% url 'main:RealEstate_view' %}"></a><img  width="64" height="64" src="https://img.icons8.com/cotton/64/home--v3.png" alt="home--v3"/> </a>
      </div>
     
      <div class="menu-ber">

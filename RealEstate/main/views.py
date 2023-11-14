@@ -5,7 +5,7 @@ from django.http import HttpRequest, HttpResponse
 # Create your views here.
 def RealEstate_view(request : HttpRequest):
   
-   print(request.COOKIES["fontsize"])
+   #print(request.COOKIES["fontsize"])
  
    return render(request, 'main/RealEstate.html')
 
