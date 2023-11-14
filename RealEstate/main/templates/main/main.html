@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/css/style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Phudu&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>{% block title %} main {% endblock %}</title>
+
+</head>
+
+
+<body {% if "size" in request.COOKIES and request.COOKIES.size == "small" %} class="small" {% endif %}
+{% if "size" in request.COOKIES and request.COOKIES.size == "large" %} class="large" {% endif %}>
+    <div class="nav-bar">   
+        <nav> 
+            
+            <img class="logo" src="/static/images/skyscraper.jpg" />
+
+                <div class="nav-links">
+                    <a href="/">Home</a>
+                    <a href="{% url 'main:services_view' %}">Services</a>
+                    <a  href="{% url 'main:about_view' %}">About</a>
+                    <a  href="{% url 'main:properites_view' %}" >Proprites</a>
+                    <a href="{% url 'main:contact_view' %}">Contact us</a>  
+                </div>
+
+                <div class="sign-up">
+                 <a href="{% url 'main:large_view' %}"><span class="material-symbols-outlined">zoom_in</span>  </a> 
+                 <a href="{% url 'main:small_view' %}"><span class="material-symbols-outlined">zoom_out</span>  </a>
+                <a href="" ><span class="material-symbols-outlined"> person </span>
+                 Sign up</a>
+            </div>
+
+
+        </nav>
+
+    </div>
+    
+
+
+
+    {% block content %}
+
+
+
+    {% endblock %}
+
+
+
+</body>
+</html>
