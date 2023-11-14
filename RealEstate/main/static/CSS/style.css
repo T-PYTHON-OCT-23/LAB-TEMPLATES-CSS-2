@@ -1,0 +1,198 @@
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    padding-bottom: 20vh;
+}
+
+
+h1, h2, h3, h4, h5 {
+    font-family: 'phudu', sans-serif;
+}
+
+p, a {
+    font-family: 'ubuntu', sans-serif;
+}
+
+
+.logo {
+    font-size: 2rem;
+    transition: all 0.4s ease-in;
+}
+
+.logo:hover {
+    transform: scale(1.2, 1.2)
+}
+
+.top-nav-container {
+    position: fixed;
+    top:0px;
+    left:0px;
+    width: 100%;
+
+    padding-top: 10vh;
+}
+
+.top-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.top-bar {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    background-color: white;
+    border-radius: 100px;
+    padding: 2rem 7rem;
+}
+
+.signup-container {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: black;
+    transition: all 500ms ease-out;
+}
+
+
+.top-nav a:hover {
+    color: red;
+    font-size: 1.4rem;
+}
+
+.homepage-content {
+    padding: 24vh 10vw;
+    padding-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    background-image: url('/static/images/image12.jpg');
+    background-size: cover;
+}
+
+.homepage-content h1 {
+    font-size: 10rem;
+}
+
+.homepage-content .btn {
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: 6px 35px;
+    border-radius: 15px;
+    
+}
+
+.sub-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 2rem;
+    align-items: start;
+}
+
+.bottom-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.bottom-nav {
+    background-color: white;
+    padding: 2rem 9rem;
+    border-radius: 6rem;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: -4rem;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    justify-content: center;
+    align-items: center;
+    transition: all 400ms ease-in;
+}
+
+.service-item:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.service-item span {
+    font-size: 3rem;
+    background-color: rgb(200, 200, 200);
+    border-radius: 50%;
+    padding: 2rem;
+    
+}
+
+.service-item  h5 {
+    font-size: 1rem;
+}
+
+#house span {
+    background-color: rgba(41, 184, 12, 0.3);
+    color: rgba(41, 184, 12, 1);
+}
+
+#house h5 {
+    color: rgba(41, 184, 12, 1);
+}
+
+#properties span {
+    background-color: rgba(199, 11, 192, 0.3);
+    color: rgba(199, 11, 192, 1);
+}
+
+#properties h5 {
+    color: rgba(199, 11, 192, 1);
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.map {
+    width: 900px;
+    height: 450px;
+    border-radius: 25px;
+}
+
+.large{
+    font-size: 1.5rem;
+}
+
+.par{
+    display: flex;
+    font-size: medium;
+    color: aquamarine;
+    
+
+}
+.homepage-content2 {
+    padding: 24vh 10vw;
+    padding-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    background-image: url('/static/images/image11.avif');
+    background-size: cover;
+}
+
+
