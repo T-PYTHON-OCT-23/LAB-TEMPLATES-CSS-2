@@ -175,8 +175,10 @@ span {
     font-size: 50px;
 }
 .ab{
-    border-radius: 80;
+    border-radius: 30px
 
 }
-
+ .all{
+    margin-left: 100px;
+ }
 
