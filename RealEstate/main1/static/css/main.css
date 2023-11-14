@@ -195,10 +195,13 @@ p, a {
     animation-fill-mode: both;
 }
  
-.small p {
+.small  {
    font: size 10px;;
 }
+.big{
 
+    font-size: larger;
+}
 
 
 

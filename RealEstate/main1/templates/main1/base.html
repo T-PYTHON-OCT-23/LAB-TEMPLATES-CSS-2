@@ -11,8 +11,9 @@
 </head>
 <body  {% if "mode" in request.COOKIES and request.COOKIES.mode == "small" %} class="small" {% endif %}>
 
+    
 
-    <div class="top-nav-container">
+    <div class="top-nav-container" >
         <nav class="top-nav">
 
             <h2 class="logo">Home</h2>
@@ -29,9 +30,13 @@
                 <span class="material-symbols-outlined">person</span>
                 <a href="">Sign up</a>
                 <div class="display-mode">
-                    
+                    <div {% if "mode" in request.COOKIES and request.COOKIES.mode == "small" %} class="small" {% endif %}>
+                        
                     <a href="{% url 'main1:small_mode_view' %}"><span class="material-symbols-outlined">zoom_out</span></a>
+                    </div>
+                    <div {% if "mode" in request.COOKIES and request.COOKIES.mode == "big" %} class="big" {% endif %}>
                     <a href="{% url 'main1:big_mode_view' %}"><span class="material-symbols-outlined">zoom_in</span></a>
+                    </div>
                 </div>
             </div>
 
@@ -41,6 +46,6 @@
     {% block content %}
 
     {% endblock %}
-    
+</div>   
 </body>
 </html>
