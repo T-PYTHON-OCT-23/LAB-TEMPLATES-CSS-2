@@ -196,11 +196,15 @@ p, a {
 }
  
 .small  {
-   font: size 10px;;
+   font: size smaller;
+}
+.small p{
+
+font-size:smaller;
 }
 .big{
 
-    font-size: larger;
+    font-size:xx-large;
 }
 
 
