@@ -155,12 +155,12 @@ ul {
     font-family: 'ubuntu', sans-serif;
 }
 
-.span {
+span {
     color: #a15721;
 }
-i{
+.i{
     padding-right: 10px;
-    background-color: rgb(170, 110, 32);
+    
     padding-right: 60px;
     flex-wrap: wrap;
   
@@ -173,6 +173,10 @@ i{
 }
 .small{
     font-size: 50px;
+}
+.ab{
+    border-radius: 80;
+
 }
 
 
