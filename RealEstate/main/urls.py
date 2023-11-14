@@ -11,4 +11,7 @@ urlpatterns = [
     path("our/service/", views.service_page_view, name="service_page_view"),
     path("contract/", views.contract_page_view, name="contract_page_view"),
     path("about/us/", views.about_page_view, name="about_page_view"),
+    path("font/small", views.small_page_redirictor, name="small_page_redirictor"),
+    path("font/larg", views.larg_page_redirictor, name="larg_page_redirictor"),
+
 ]

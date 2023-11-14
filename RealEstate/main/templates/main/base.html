@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
 
 </head>
-<body>
+<body {% if "font_is_small" in request.COOKIES and request.COOKIES.font_is_small == "True" %} class="body-change" {% endif %}>
     <div class="root">
         <!-- navbar start-->
         <div class="upper">
@@ -36,6 +36,12 @@
                     </div>
                     <div>
                         <a href="">Sign up</a>
+                    </div>
+                    <div class="sign-logo">
+                        <a href="{% url 'main:small_page_redirictor' %}"><h4>z</h4></a>
+                    </div>
+                    <div class="sign-logo">
+                        <a href="{% url 'main:larg_page_redirictor' %}"><h1>Z</h1></a>
                     </div>
 
                 </div>

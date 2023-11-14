@@ -1,3 +1,6 @@
+.body-change {
+    font-size: 50px;
+}
 html, body {
     height: 100%;
     margin: 0;
@@ -39,6 +42,7 @@ html, body {
 .sign-box {
     display: flex;
     justify-content: space-around;
+    flex-direction: row;
     align-items: center;
 }
 .sign-logo {
