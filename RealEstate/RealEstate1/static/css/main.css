@@ -17,6 +17,19 @@
     top : 8px;
     right: 16px;
 }
+body {
+    padding-bottom: 20vh;
+    overflow-x: hidden;
+    background-color: rgb(225, 231, 243);
+    background: url("/static/image/background1.png") 50% 0 no-repeat fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: inherit;
+    margin-top: 0px;
+}
+
 
 a{
     text-decoration: none;
@@ -56,14 +69,8 @@ a{
     word-spacing: 5px;
     
   }
-  body{
-    background-color: rgb(135, 169, 232);
-    background: url("/static/image/background1.png") 50% 0 no-repeat fixed;
-    
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
+
+  
   
   footer{
     margin-bottom: 0px;
@@ -138,3 +145,56 @@ button{
 
 
 }
+@keyframes bigger {
+    
+    from {
+        transform: scale(0,0) translate(-100%, 0px);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1, 1)  translate(0px, 0px);
+        opacity: 1;
+    }
+}
+.animation {
+    animation-name: bigger;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+.paragraph{
+  
+  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.paragraph img{
+    width: 400px;
+    border-radius: 30px;
+
+}
+
+ .large {
+    font-size: 50px;
+}
+
+
+
+.aboutBack{
+    background-color: rgb(87, 178, 178);
+}
+
+.wrapper {
+    padding: 24vh 10vw;
+    padding-bottom: 10vh;
+    background-size: cover;
+    width: 100%;  
+}
+
+.homepage-content {
+    background-color: antiquewhite;
+}
+
